@@ -81,7 +81,7 @@ header nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-right: 50px;
+  padding-right: 10px;
 
   gap: 6px;
 }
@@ -100,7 +100,7 @@ header nav {
 }
 
 .cta-btn .start-for-free button {
-  background-color: #ffffffd9;
+  background-color: #ffffff;
   color: #1e1e1e;
 }
 
@@ -111,13 +111,15 @@ main {
   align-items: center;
   background-image: url(https://www.mintlify.com/hero/bg-light.svg);
   background-size: cover;
-  background-position: center;
+  background-position: center -130px;
+  background-color: #ffffff;
   height: 100%;
   min-height: 100vh;
   z-index: -1;
   top: -4rem;
   position: relative;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 main section {
@@ -131,8 +133,8 @@ main section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   margin-top: 40px;
+  z-index: 2;
 }
 
 .hero-section a {
@@ -144,7 +146,7 @@ main section {
   align-items: center;
 
   position: absolute;
-  top: 50px;
+  top: 90px;
 }
 
 .heading {
@@ -159,7 +161,7 @@ main section {
 }
 
 .heading h1 {
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: -0.02rem;
   text-wrap: balance;
   line-height: 75px;
@@ -184,7 +186,7 @@ main section {
   margin-top: 32px;
   justify-content: space-between;
   border-radius: 3.40282e38px;
-  width: 60%;
+  width: 65%;
 }
 
 .heading form input {
@@ -202,6 +204,7 @@ main section {
 .heading form input::placeholder {
   color: #ffffff;
   opacity: 50%;
+  font-weight: 600;
 }
 
 .heading form button {
@@ -218,4 +221,64 @@ main section {
   height: fit-content;
   border: 1px solid #ffffff;
   padding: 2px 12px;
+}
+
+.hero-section-img {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 67.5rem;
+  z-index: 5;
+}
+
+.hero-section-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px; /* adjust if needed */
+  background: #ffffff;
+  z-index: 1;
+}
+
+.trusted-by {
+  padding: 72px 32px 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 28px;
+  column-gap: 8px;
+  max-width: 64rem;
+}
+
+.logos-company {
+  width: 250px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-company img {
+  width: 130px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
 }
