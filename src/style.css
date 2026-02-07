@@ -386,6 +386,7 @@ main::after {
   color: #08090a;
   font-weight: 500;
   font-family: var(--font-inter);
+  white-space: nowrap;
 }
 .card-content p:nth-of-type(2) {
   color: #08090acc;
@@ -405,4 +406,36 @@ main::after {
 .card-video video {
   width: 480px;
   height: 320px;
+}
+
+.card-final {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.feature-card-2 {
+  width: 100%;
+}
+
+.card-feature-2 {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #08090a12;
+  border-radius: 24px;
+}
+
+.card-video-2 video {
+  width: 100%;
+  height: 431px;
+}
+
+.card-feature-2 .card-content {
+  text-align: center;
+  align-items: center;
+  padding: 48px 32px;
+  margin: 6px;
 }
