@@ -596,3 +596,91 @@ h4 {
   white-space: nowrap;
 }
 
+.big-img img {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: transparent;
+  backface-visibility: hidden;
+  object-fit: cover;
+  object-position: center;
+  scale: 1.15;
+  vertical-align: middle;
+}
+
+.z-index {
+  z-index: 10;
+}
+
+.big-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #ffffff;
+  border: 1px solid red;
+  padding: 64px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 518px;
+  width: 100%;
+  margin: 0px auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.big-img p {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  line-height: 18px;
+  font-family: var(--font-inter);
+}
+
+.big-img h3 {
+  font-size: 24px;
+  letter-spacing: -0.24px;
+  font-weight: 500;
+  line-height: 1.34;
+  margin-top: 16px;
+  max-width: 28rem;
+}
+
+.readstory {
+  margin-top: 32px;
+  width: fit-content;
+}
+
+.readstory span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.readstory span svg {
+  rotate: -90deg;
+  width: 10px;
+  height: 10px;
+}
+
+.customer-number {
+  margin-top: auto;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.M {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
